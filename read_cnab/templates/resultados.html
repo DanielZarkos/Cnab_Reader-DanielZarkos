@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resultados</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Data</th>
+          <th>Valor</th>
+          <th>CPF</th>
+          <th>Hora</th>
+          <th>Dono</th>
+          <th>Loja</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for transaction in transactions %}
+        <tr>
+          <td>{{transaction.tipo}}</td>
+          <td>{{transaction.data}}</td>
+          <td>R$ {{transaction.valor|floatformat:2}}</td>
+          <td>{{transaction.cpf}}</td>
+          <td>{{transaction.horario}}</td>
+          <td>{{transaction.dono}}</td>
+          <td>{{transaction.loja}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <h1>Saldo total: R$ {{saldo_total|floatformat:2}}</h1>
+  </body>
+</html>
