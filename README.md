@@ -21,7 +21,7 @@
 ### Clone este repositório
 
 ```
-git clone git@github.com: https://github.com/DanielZarkos/m6-s2-cnab-reader
+git clone git@github.com: https://github.com/DanielZarkos/Cnab_Reader-DanielZarkos
 ```
 
 ### Crie o ambiente virtual em seu terminal
