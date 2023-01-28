@@ -55,11 +55,9 @@ def upload_file(request):
 
                 if tipo in ["Boleto", "Financiamento", "Aluguel"]:
                     saldo_total -= valor
-                    print(-valor)
 
                 else:
                     saldo_total += valor
-                    print(valor)
 
         return render(
             request,

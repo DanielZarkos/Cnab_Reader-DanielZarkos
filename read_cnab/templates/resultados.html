@@ -26,13 +26,14 @@
           <td>{{transaction.data}}</td>
           <td>R$ {{transaction.valor|floatformat:2}}</td>
           <td>{{transaction.cpf}}</td>
-          <td>{{transaction.horario}}</td>
+          <td>{{transaction.hora}}</td>
           <td>{{transaction.dono}}</td>
           <td>{{transaction.loja}}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
+
     <h1>Saldo total: R$ {{saldo_total|floatformat:2}}</h1>
   </body>
 </html>
